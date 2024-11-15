@@ -1,0 +1,55 @@
+Here's a tailored guide for setting up Aiken-lang on macOS:
+
+### Prerequisites
+
+1. **Install Rust**: Use `rustup`, the recommended installer for Rust:
+   ```bash
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+   Follow the on-screen instructions, and make sure to add Rust to your PATH as prompted.
+
+2. **Install Node.js** (if needed): If Aiken-lang has JavaScript dependencies, install Node.js via Homebrew:
+   ```bash
+   brew install node
+   ```
+
+3. **Install Git**: This is necessary to clone the Aiken-lang repository.
+   ```bash
+   brew install git
+   ```
+
+### Installation Steps
+
+1. **Clone the Aiken-lang Repository**:
+   ```bash
+   git clone https://github.com/aiken-lang/aiken.git
+   ```
+
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd aiken
+   ```
+
+3. **Build the Project**:
+   If Aiken-lang uses Cargo, the Rust package manager, build it with:
+   ```bash
+   cargo build --release
+   ```
+
+4. **Install Aiken-lang Globally**:
+   If Aiken-lang provides a CLI binary, install it:
+   ```bash
+   cargo install aiken
+   ```
+
+5. **Verify the Installation**:
+   Confirm that Aiken-lang is installed correctly by checking its version:
+   ```bash
+   aiken --version
+   ```
+
+### Development Environment
+
+To streamline development, consider using **Visual Studio Code** with the **Rust** and **Aiken-lang** syntax extensions. This provides syntax highlighting, linting, and code completion.
+
+Let me know if you hit any snags or need further customization!
